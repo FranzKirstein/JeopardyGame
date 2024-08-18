@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgba(0, 29, 121, 1) 60%,
+    rgba(136, 56, 192, 0.885) 75%,
+    rgba(210, 43, 43, 1) 86%,
+    rgba(210, 198, 114, 1) 100%
+  );
+  background-size: cover; /* Ensure the gradient covers the entire body */
+  background-repeat: no-repeat; /* Prevent repetition (though not needed for gradients) */
+  background-attachment: fixed; /* Optional: Fix the background in place */
+}
+
+header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: cursive;
+}
+
+header > h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+#jeopardy {
+  text-align: center;
+  font-size: 12pt;
+  background: rgb(0, 29, 121);
+  color: rgb(199, 173, 29);
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#jeopardy th,
+#jeopardy td {
+  border: solid 1px rgb(255, 255, 255);
+  width: 10em;
+  padding: 0.5em;
+}
+
+#jeopardy td.disabled {
+  background-color: #28a200;
+}
+
+th {
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  height: 4em;
+  text-shadow: darkgoldenrod 1px 1px;
+}
+
+td {
+  height: 7em;
+  font-family: Copse, serif;
+}
+
+button,
+td {
+  cursor: pointer;
+}
+
+.fa-question-circle {
+  pointer-events: none;
+}
+
+#start {
+  background-color: gold;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+#start:hover,
+#start.disabled {
+  background-color: #45da5e;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+#spin-container {
+  font-size: 12em;
+  text-align: center;
+  color: white;
+  margin: 25px;
+  display: none;
+}
+.point-value {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#jeopardy td.disabled {
+  background-color: #28a200;
+  color: rgb(255, 255, 255); /* Ensure text is readable when disabled */
+}
+
+td {
+  height: 7em;
+  font-family: "Copse", serif;
+  line-height: 2em; /* Center text vertically */
+}
